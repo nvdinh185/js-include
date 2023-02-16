@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery-3.6.3.min.js"></script>
-    <script src="main.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("include.html");
+        });
+    </script>
 </head>
 
 <body>
     <h1>This is cat file</h1>
+    <h3 id="h3">333</h3>
     <div id="includedContent"></div>
 </body>
-<script>
-    $(function () {
-        $("#includedContent").load("include.html");
-    });
-</script>
 
 </html>
